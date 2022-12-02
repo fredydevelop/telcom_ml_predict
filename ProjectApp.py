@@ -210,9 +210,7 @@ def multi(input_data):
         #st.dataframe(prediction)
         #visualize=st.button("Data visulization")
     if  selectiond=="Visualization":
-        chart_data = pd.DataFrame(
-        dfinput.iloc[:20],
-        colums=["Main_Account"])
+        chart_data = pd.DataFrame(dfinput.iloc[:20],colums=["Main_Account"])
         st.bar_chart(chart_data)
 
     #ploting histogram
