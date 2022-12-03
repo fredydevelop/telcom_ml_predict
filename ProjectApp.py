@@ -110,10 +110,10 @@ def job(u):
 
 
 def visual(yu):
-    chart_data = pd.DataFrame(
-    yu.iloc[:20],
-    columns=["Main_Account"])
-    st.bar_chart(chart_data)
+    #chart_data = pd.DataFrame(
+    #yu.iloc[:20],
+    #columns=["Main_Account"])
+    #st.bar_chart(chart_data)
 
     #ploting histogram
     jame = pd.DataFrame(yu[0:], columns = ["Service","Outstanding_debt","ActiveFor3monthsAndAbove","Main_Account"])
