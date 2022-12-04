@@ -221,9 +221,6 @@ def multi(input_data):
         plt.show()
         st.pyplot()
 
-    #plotting line chat
-        liney = pd.DataFrame(dfinput[0:], columns = ["Main_Account"])
-        st.line_chart(liney)
 
 if selection=="Single Prediction":
     main()
