@@ -210,7 +210,9 @@ def multi(input_data):
         #st.dataframe(prediction)
         #visualize=st.button("Data visulization")
     if  selectiond=="Visualization":
-        chart_data = pd.DataFrame(dfinput.iloc[:20],colums=["Main_Account"])
+        chart_data = pd.DataFrame(
+        dfinput.iloc[:20],
+        columns=["Main_Account"])
         st.bar_chart(chart_data)
 
     #ploting histogram
@@ -221,8 +223,7 @@ def multi(input_data):
 
     #plotting line chat
         liney = pd.DataFrame(dfinput[0:], columns = ["Main_Account"])
-        st.line_chart(liney) 
-
+        st.line_chart(liney)
 
 if selection=="Single Prediction":
     main()
