@@ -80,7 +80,7 @@ def main():
     Main_Account=st.number_input("Main account balance")
 
     if Main_Account >75.0:
-            theReasons.append("Your main account balance is greater than 75 Naira")
+            theReasons.append("Your main account balance is greater than ₦75")
     
     option3 = st.selectbox("Has number been registered ?",("",'Yes', 'No'),key="registered")
     if (option3=='Yes'):
