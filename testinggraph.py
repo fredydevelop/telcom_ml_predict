@@ -12,7 +12,7 @@ from sklearn.metrics import f1_score
 from sklearn.metrics import confusion_matrix,classification_report 
 import base64
 from sklearn import svm
-import seaborn as sns
+#import seaborn as sns
 import altair as alt
 
 
