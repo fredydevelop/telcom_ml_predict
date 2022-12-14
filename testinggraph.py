@@ -198,10 +198,10 @@ def multi(input_data):
         interchange=[]
         for i in prediction:
             if i==0:
-                newi="No"
+                newi="Not Eligible"
                 interchange.append(newi)
             elif i==1:
-                newi="Yes"
+                newi="Eligible"
                 interchange.append(newi)
             
         st.subheader('**Predicted output**')
