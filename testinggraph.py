@@ -179,9 +179,6 @@ def multi(input_data):
     X_test_prediction=classifier.predict(X_test)
     cf_matrix = confusion_matrix(Y_test, X_test_prediction)
     
-    sns.heatmap(cf_matrix, annot=True)
-    plt.ylabel('True')
-    plt.xlabel('Predicted')
 
     #selectionofactivity starts here
     st.write()
