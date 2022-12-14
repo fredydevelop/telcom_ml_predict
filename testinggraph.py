@@ -275,7 +275,7 @@ if selection=="Model Performance":
     Y_test = Y_test.reset_index()
     real=Y_test.drop(columns="index",axis=1)
     real=real.rename(columns={"Loan_Status":"Reality"})
-    jk=pd.DataFrame(X_test_prediction,columns = ['predicted Reality'])
+    jk=pd.DataFrame(X_test_prediction,columns = ['Predicted'])
         
     checkingResult = pd.concat([real, jk], axis=1)
     #X_test_prediction.rename(columns={0:"predicted Reality"},inplace = True)
