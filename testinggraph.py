@@ -222,8 +222,22 @@ def multi(input_data):
             l=alt.Chart(dfinput).mark_bar().encode(x=("Outstanding_debt"),y="Main_Account")
             w=alt.Chart(dfinput).mark_bar().encode(x=("Service"),y="Main_Account")
             #p=p.properties(width=alt.Step(170))
+        st.write("\n")
+        st.write("\n")
+        st.write("\n")
+        st.write("\n")
+
+            #p=p.properties(width=alt.Step(170))
+        
         st.write(p)
+        st.text("                           Fig 1. ActiveFor3monthsAndAbove columns against Main_Account ")
+        st.write("\n")
+        st.write("\n")
+        st.write("\n")
+        st.write("\n")
         st.write(l)
+        st.text("                           Fig 2. Outstanding_debt columns against Main_Account ")
+        
         
 
 
