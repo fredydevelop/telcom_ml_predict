@@ -230,13 +230,13 @@ def multi(input_data):
             #p=p.properties(width=alt.Step(170))
         
         st.write(p)
-        st.text("                           Fig 1. ActiveFor3monthsAndAbove columns against Main_Account ")
+        st.text("                           Fig 1. ActiveFor3monthsAndAbove column against Main_Account ")
         st.write("\n")
         st.write("\n")
         st.write("\n")
         st.write("\n")
         st.write(l)
-        st.text("                           Fig 2. Outstanding_debt columns against Main_Account ")
+        st.text("                           Fig 2. Outstanding_debt column against Main_Account ")
         
         
 
