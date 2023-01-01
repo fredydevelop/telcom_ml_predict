@@ -271,7 +271,7 @@ if selection=="Model Performance":
     showGlimpse.replace({'Outstanding_debt':{'no':0,'yes':1},'Service':{'prepaid':1,'postpaid':0},'ActiveFor3monthsAndAbove':{'no':0,'yes':1},'RegisteredPhoneNumber':{'no':0,'yes':1},'spent_atLeast_N200_monthly_for3months':{'no':0,'yes':1}},inplace=True)
     X = showGlimpse.drop(columns=['Loan_ID','Loan_Status'],axis=1)
     Y = showGlimpse['Loan_Status']
-    X_train, X_test,Y_train,Y_test = train_test_split(X,Y,test_size=0.3,random_state=42)
+    X_train, X_test,Y_train,Y_test = train_test_split(X,Y,test_size=0.1,random_state=2,stratify=Y)
     classifier = svm.SVC(kernel='linear')
     classifier.fit(X_train,Y_train)
     X_test_prediction=classifier.predict(X_test)
