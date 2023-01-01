@@ -171,7 +171,7 @@ def multi(input_data):
     X = showGlimpse.drop(columns=['Loan_ID','Loan_Status'],axis=1)
     Y = showGlimpse['Loan_Status']
 
-    X_train, X_test,Y_train,Y_test = train_test_split(X,Y,test_size=0.3,random_state=42)
+    X_train, X_test,Y_train,Y_test = train_test_split(X,Y,test_size=0.1,random_state=2,stratify=Y)
     classifier = svm.SVC(kernel='linear')
     
     #training the support Vector Macine model
